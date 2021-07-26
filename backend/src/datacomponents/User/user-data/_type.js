@@ -1,4 +1,4 @@
-import { permissions } from '../../../directives';
+import { permissions } from "../../../directives";
 
 export const types = `
   type User {
@@ -6,7 +6,8 @@ export const types = `
     name: String
     username: String
     email: String @${permissions.can.read.user_profile}
-  }`;
+  }
+  `;
 
 export const typeResolvers = {
   //
