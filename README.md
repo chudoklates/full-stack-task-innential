@@ -13,7 +13,7 @@ Create a field `comments` on the `User` type, which will be an array of `Comment
 
 Make sure the `createComment` mutation return type is `Comment`
 
-## Front-end
+## Front-end (React)
 
 In `api` folder:
 
