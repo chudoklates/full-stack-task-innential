@@ -25,5 +25,5 @@ Use the `CommentData` fragment in the front-end definition of the `createComment
 
 In `_home.js`:
 
-Define the update function for the `COMMENT_MUTATION` that will receive the created comment and write it 
-inside of the `comments` array of the `currentUser` object
+Define the `update` function for the `COMMENT_MUTATION` that will receive the created comment and write it 
+inside of the `comments` array of the `currentUser` object in the Apollo cache
