@@ -5,7 +5,14 @@ export const types = `
     id: ID!
     name: String
     username: String
+    comments: [Comment]
     email: String @${permissions.can.read.user_profile}
+  }
+
+  type Comment {
+    id: String!
+    timestamp: String!
+    text: String!
   }
   `;
 

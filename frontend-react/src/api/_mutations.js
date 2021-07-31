@@ -1,5 +1,9 @@
 import { gql } from "@apollo/client";
 
+import {
+  Comment,
+} from './_fragments';
+
 // REMOTE
 export const LOGIN_MUTATION = gql`
   mutation login($userCredentials: userCredentials!) {
@@ -9,6 +13,9 @@ export const LOGIN_MUTATION = gql`
 
 export const COMMENT_MUTATION = gql`
   mutation createComment {
-    createComment
+    createComment {
+      ...CommentData
+    }
   }
+  ${Comment.fragments.CommentData}
 `;
