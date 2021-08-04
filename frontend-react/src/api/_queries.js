@@ -1,6 +1,7 @@
 import { gql } from '@apollo/client'
 import {
   User,
+  Comment
 } from './_fragments'
 
 // REMOTE
@@ -19,8 +20,10 @@ export const AUTH_QUERY = gql`
 export const CURRENT_USER_QUERY = gql`
   query currentUser {
     currentUser {
-      ...UserBasicData
+      ...UserBasicData,
+      comments
     }
   }
   ${User.fragments.UserBasicData}
+  ${Comment.fragments.CommentData}
 `
