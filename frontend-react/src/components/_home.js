@@ -8,6 +8,17 @@ export default ({ match }) => {
   const [createComment] = useMutation(COMMENT_MUTATION, {
     update: (proxy, { data: { createComment: comment } }) => {
       // UPDATE
+      const currentUser = proxy.readQuery({
+        query: CURRENT_USER_QUERY
+      });
+
+      proxy.writeQuery({
+        query: CURRENT_USER_QUERY,
+        data: {
+          ...currentUser,
+          comments: [...currentUser.comments, comment]
+        }
+      })
     },
   });
 
