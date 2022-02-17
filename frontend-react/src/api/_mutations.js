@@ -6,9 +6,3 @@ export const LOGIN_MUTATION = gql`
     login(input: $userCredentials)
   }
 `;
-
-export const COMMENT_MUTATION = gql`
-  mutation createComment {
-    createComment
-  }
-`;
