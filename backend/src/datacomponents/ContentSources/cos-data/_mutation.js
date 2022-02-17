@@ -1,4 +1,4 @@
-import fs from "fs";
+import fs from 'fs';
 
 export const mutationTypes = `
   type Mutation {
@@ -10,7 +10,7 @@ export const mutationResolvers = {
   Mutation: {
     editContentSource: async (_, { inputData }) => {
       const existingData = JSON.parse(
-        fs.readFileSync("udemy.json", { encoding: "utf-8" })
+        fs.readFileSync('udemy.json', { encoding: 'utf-8' })
       );
 
       const newData = {
@@ -20,7 +20,7 @@ export const mutationResolvers = {
       };
 
       try {
-        fs.writeFileSync("udemy.json", JSON.stringify(newData));
+        fs.writeFileSync('udemy.json', JSON.stringify(newData));
       } catch (err) {
         console.error(err);
       }

@@ -1,4 +1,4 @@
-import { permissions } from "../../../directives";
+import { permissions } from '../../../directives';
 
 export const types = `
   type User {
