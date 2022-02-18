@@ -9,7 +9,7 @@ export const queryTypes = `
 export const queryResolvers = {
   Query: {
     fetchSourceEditForm: async () => {
-      const data = fs.readFileSync('udemy.json', { encoding: 'utf-8' });
+      const data = fs.readFileSync('data.json', { encoding: 'utf-8' });
       return JSON.parse(data);
     }
   }

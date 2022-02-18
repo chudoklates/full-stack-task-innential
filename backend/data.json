@@ -1,0 +1,13 @@
+{
+	"_id" : "5cc83a2dd103f100276fedd0",
+	"baseUrls" : [
+		"https://codecademy.com"
+	],
+	"name" : "Codecademy",
+	"slug" : "codecademy",
+	"createdAt" : "2019-04-30T14:06:05.794+02:00",
+	"updatedAt" : "2020-09-29T15:33:25.152+02:00",
+	"tags" : [ ],
+	"certText" : null,
+	"affiliate" : true
+}
